@@ -1422,7 +1422,7 @@ var sortDataInOrder = function (data, columns) {
 };
 var makeRender = function (
 // eslint-disable-next-line
-value, 
+value,
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 render, row) {
     return render ? function () { return render({ row: row, value: value }); } : function () { return value; };
@@ -2195,15 +2195,15 @@ var links = [
             // },
             {
                 label: "Github",
-                href: "https://github.com/goosedefi/",
+                href: "https://github.com/Vaporwave-ORG/",
             },
             {
                 label: "Docs",
-                href: "https://goosedefi.gitbook.io/goose-finance/",
+                href: "https://vaporwavecoin.com",
             },
             {
                 label: "Blog",
-                href: "https://goosefinance.medium.com/",
+                href: "https://vaporwavecoin.com",
             },
         ],
     },
@@ -2215,15 +2215,15 @@ var socials = [
         items: [
             {
                 label: "English",
-                href: "https://t.me/goosedefi",
+                href: "https://t.me/vaporwavecoin",
             },
-            // {
-            //   label: "Bahasa Indonesia",
-            //   href: "https://t.me/PancakeSwapIndonesia",
-            // },
+            {
+              label: "Bahasa Indonesia",
+              href: "https://t.me/vaporwave_indonesia",
+            },
             {
                 label: "中文",
-                href: "https://t.me/goosefinancechinese",
+                href: "https://t.me/vaporwave_cn",
             },
             // {
             //   label: "Tiếng Việt",
@@ -2231,15 +2231,15 @@ var socials = [
             // },
             {
                 label: "Italiano",
-                href: "https://t.me/goosefinanceitalian",
+                href: "https://t.me/vaporwave_it",
             },
             {
                 label: "русский",
-                href: "https://t.me/goosefinancerussian",
+                href: "https://t.me/vaporwave_ru",
             },
             {
                 label: "Türkiye",
-                href: "https://t.me/GooseFinanceTurkey",
+                href: "https://t.me/vaporwave_tr",
             },
             // {
             //   label: "Português",
@@ -2247,35 +2247,35 @@ var socials = [
             // },
             {
                 label: "Español",
-                href: "https://t.me/goosefinancespanish",
+                href: "https://t.me/vaporwave_es",
             },
             {
                 label: "日本語",
-                href: "https://t.me/goosefinancejapanese",
+                href: "https://t.me/vaporwave_jp",
             },
             {
                 label: "Français",
-                href: "https://t.me/goosefinancefrench",
+                href: "https://t.me/vaporwave_fr",
             },
             {
                 label: "Announcements",
-                href: "https://t.me/goosefinanceann",
+                href: "https://t.me/vaporwave_news",
             },
             {
                 label: "Price Bot",
-                href: "https://t.me/BinanceRocketEGG",
+                href: "https://t.me/vaporwave_pricebot",
             },
         ],
     },
     {
         label: "Twitter",
         icon: "TwitterIcon",
-        href: "https://twitter.com/goosedefi",
+        href: "https://twitter.com/VaporwaveCoin",
     },
     {
         label: "Reddit",
         icon: "RedditIcon",
-        href: "https://www.reddit.com/r/GooseFinanceofficial",
+        href: "https://www.reddit.com/r/VaporwaveProtocol",
     },
 ];
 var MENU_HEIGHT = 64;
@@ -2420,7 +2420,7 @@ var PanelFooter = function (_a) {
                     React.createElement(Text, { color: "textDisabled", mx: "4px" }, "/"),
                     React.createElement(MoonIcon, { color: isDark ? "text" : "textDisabled", width: "24px" }))),
             React.createElement(Dropdown, { position: "top-right", target: React.createElement(Button, { variant: "text", startIcon: React.createElement(LanguageIcon, { color: "textSubtle", width: "24px" }) },
-                    React.createElement(Text, { color: "textSubtle" }, currentLang === null || currentLang === void 0 ? void 0 : currentLang.toUpperCase())) }, langs.map(function (lang) { return (React.createElement(MenuButton, { key: lang.code, fullWidth: true, onClick: function () { return setLang(lang); }, 
+                    React.createElement(Text, { color: "textSubtle" }, currentLang === null || currentLang === void 0 ? void 0 : currentLang.toUpperCase())) }, langs.map(function (lang) { return (React.createElement(MenuButton, { key: lang.code, fullWidth: true, onClick: function () { return setLang(lang); },
                 // Safari fix
                 style: { minHeight: "32px", height: "auto" } }, lang.language)); })))));
 };
@@ -2852,9 +2852,9 @@ var templateObject_1$K;
 
 var baseColors = {
     failure: "#ED4B9E",
-    primary: "#aa8929",
-    primaryBright: "#aa8929",
-    primaryDark: "#aa8929",
+    primary: "#404040",
+    primaryBright: "#404040",
+    primaryDark: "#404040",
     secondary: "#7645D9",
     success: "#31D0AA",
     warning: "#FFB237",
@@ -2865,7 +2865,7 @@ var brandColors = {
 var lightColors = __assign(__assign(__assign({}, baseColors), brandColors), { background: "#FAF9FA", backgroundDisabled: "#E9EAEB", contrast: "#191326", invertedContrast: "#FFFFFF", input: "#eeeaf4", tertiary: "#EFF4F5", text: "#452A7A", textDisabled: "#BDC2C4", textSubtle: "#8f80ba", borderColor: "#E9EAEB", card: "#FFFFFF", gradients: {
         bubblegum: "linear-gradient(139.73deg, #E6FDFF 0%, #F3EFFF 100%)",
     } });
-var darkColors = __assign(__assign(__assign({}, baseColors), brandColors), { secondary: "#9A6AFF", background: "#343135", backgroundDisabled: "#3c3742", contrast: "#FFFFFF", invertedContrast: "#191326", input: "#483f5a", primaryDark: "#0098A1", tertiary: "#353547", text: "#EAE2FC", textDisabled: "#666171", textSubtle: "#c9c4d4", borderColor: "#524B63", card: "#27262c", gradients: {
+var darkColors = __assign(__assign(__assign({}, baseColors), brandColors), { secondary: "#FFFFFF", background: "#343135", backgroundDisabled: "#3c3742", contrast: "#FFFFFF", invertedContrast: "#191326", input: "#483f5a", primaryDark: "#0098A1", tertiary: "#353547", text: "#EAE2FC", textDisabled: "#666171", textSubtle: "#c9c4d4", borderColor: "#524B63", card: "#27262c", gradients: {
         bubblegum: "linear-gradient(139.73deg, #313D5C 0%, #3D2A54 100%)",
     } });
 
